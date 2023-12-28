@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Your title</title>
-    <link>https://example.com/posts/</link>
+    <link>https://a-wty.github.io/posts/</link>
     <description>Recent content in Posts on Your title</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 21 Dec 2023 18:37:26 +0800</lastBuildDate>
-    <atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://a-wty.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>小白基于Hugo和Github搭建博客</title>
-      <link>https://example.com/posts/%E5%B0%8F%E7%99%BD%E5%9F%BA%E4%BA%8Ehugo%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://a-wty.github.io/posts/%E5%B0%8F%E7%99%BD%E5%9F%BA%E4%BA%8Ehugo%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Thu, 21 Dec 2023 18:37:26 +0800</pubDate>
-      <guid>https://example.com/posts/%E5%B0%8F%E7%99%BD%E5%9F%BA%E4%BA%8Ehugo%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>https://a-wty.github.io/posts/%E5%B0%8F%E7%99%BD%E5%9F%BA%E4%BA%8Ehugo%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description>前言 本文是一个纯小白搭建博客的教程。是在win11系统内进行操作。&#xA;主要参考《使用hugo+github搭建免费个人博客》、《利用SSH将本地仓库文件推送至远程仓库（GitHub）》和网络上的部分文章。&#xA;一、下载git 二、下载Hugo 1、下载 点击此进入Hugo下载界面。&#xA;依次点击Code、Download ZIP下载安装包&#xA;在任意盘符下新建Hugo\bin文件夹&#xA;例如我建立如下文件夹C:\Program Files\Hugo\bin&#xA;把下载好的hugo安装包解压到此文件夹下&#xA;此时bin文件夹下应该有如下文件&#xA;hugo.exe&#xA;LICENSE&#xA;README.md&#xA;在bin下右键选择Open Git Bash here打开Git命令窗口&#xA;输入&#xA;hugo version 出现Hugo版本号即为成功&#xA;2、配置环境变量 右键此电脑依次点击属性、高级系统设置、高级、环境变量&#xA;在系统变量中双击path进入后新建文件路径。路径为bin文件夹所在的位置&#xA;例如我的路径为C:\Program Files\Hugo\bin&#xA;加入成功后搜索cmd打开终端输入&#xA;hugo version 出现Hugo版本号即为成功&#xA;三、本地搭建博客 1、搭建站点 在任意文件夹下右键打开Open Git Bash here输入&#xA;hugo new site test_blogs 其中test_blogs可以换成名字&#xA;ps.我就选择在C:\Program Files\Hugo下运行此命令&#xA;运行成功后就会在C:\Program Files\Hugo下看到一个名为test_blogs的文件夹&#xA;进入文件后会有如下文件&#xA;archetypes&#xA;assets&#xA;content&#xA;data&#xA;i18n&#xA;layouts&#xA;static&#xA;themes&#xA;hugo.toml&#xA;此时站点就搭建成功了&#xA;2、下载主题 点击此进入Hugo博客主题&#xA;选择一个喜欢的主题下载，这里我以m10c为例，下载地址为：https://github.com/vaga/hugo-theme-m10c&#xA;依次点击Code、Download ZIP下载压缩包&#xA;把压缩包解压到C:\Program Files\Hugo\test_blogs\themes下&#xA;并把主题文件重命名为主题文件&#xA;把C:\Users\A\Desktop\blog\themes\m10c\exampleSite里的config.toml文件改成hugo.toml并粘贴覆盖到C:\Program Files\Hugo\test_blogs</description>
     </item>
   </channel>
