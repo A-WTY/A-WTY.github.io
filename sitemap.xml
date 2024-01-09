@@ -1,21 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://a-wty.github.io/about/</loc>
-    <lastmod>2024-01-09T00:26:22+08:00</lastmod>
-  </url><url>
-    <loc>https://a-wty.github.io/</loc>
-    <lastmod>2024-01-01T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://a-wty.github.io/posts/</loc>
-    <lastmod>2024-01-01T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://a-wty.github.io/posts/%E5%B0%8F%E7%99%BD%E5%9F%BA%E4%BA%8Ehugo%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2024-01-01T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://a-wty.github.io/categories/</loc>
-  </url><url>
-    <loc>https://a-wty.github.io/tags/</loc>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://0x555.cn/</loc>
+  <lastmod>2024-01-09T05:53:10+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://0x555.cn/about/</loc>
+  <lastmod>2024-01-09T05:53:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>
