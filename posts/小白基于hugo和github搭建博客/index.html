@@ -145,12 +145,12 @@ hugo.toml
   <title>clock</title>
   <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
 </svg>
-          1 min read
+          2 min read
         </div>
       </div>
     </header>
     <div class="post-content">
-      <h2 id="前言">前言</h2>
+      <h3 id="前言">前言</h3>
 <p>本文是一个纯小白搭建博客的教程。是在<strong>win11</strong>系统内进行操作。</p>
 <p>主要参考《<a href="https://blog.csdn.net/lishuangquan1987/article/details/133578971">使用hugo+github搭建免费个人博客</a>》、《<a href="https://blog.csdn.net/weixin_48158964/article/details/134311093">利用SSH将本地仓库文件推送至远程仓库（GitHub）</a>》和网络上的部分文章。</p>
 <hr>
@@ -275,6 +275,17 @@ hugo.toml</p>
 <p><img src="/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240101130127.png" alt="url在的地方"></p>
 <p>这时在浏览器地址输入<code>&quot;你的github名字&quot;.github.io</code>就可以进入博客了</p>
 <h2 id="五多次提交文章">五、多次提交文章</h2>
+<p>在文件夹<strong>C:\Program Files\Hugo\test_blogs</strong>下运行命令</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>hugo new posts\你的文章名字.md  
+</span></span></code></pre></div><p>创建文章并写好后在文件夹<strong>C:\Program Files\Hugo\test_blogs</strong>下运行命令</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>hugo  
+</span></span><span style="display:flex;"><span>hugo server  
+</span></span></code></pre></div><p>其中，第一行命令是必须执行，第二行命令只是本地运行博客，作用是本地先检查博客文章是否有问题，如果有修改后再重新来一遍第一行命令，循环往复，直到满意为止</p>
+<p>在<strong>public</strong>文件夹里依次运行以下命令</p>
+<pre tabindex="0"><code class="language-test" data-lang="test">git add .  
+git commit -m &#34;修改备注&#34;  
+git push -u origin main  
+</code></pre><p>这一连串命令是把<strong>public</strong>文件夹里的文件上传到github上</p>
 <h2 id="六后记">六、后记</h2>
 <p>一篇文章不可能解决博客部署遇到的所有问题，我这篇博客也有一些部署时遇到的一些坑和难关。但是对于现阶段的我们遇到的问题有99%前人都有遇到过，所以善用搜索引擎都可以解决。大不了删库重来。</p>
 
