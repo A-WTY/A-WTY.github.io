@@ -6,8 +6,15 @@
     <description>Recent content in Posts on 0X555</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jan 2024 11:10:18 +0800</lastBuildDate>
     <atom:link href="https://a-wty.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自定义域名解析到博客</title>
+      <link>https://a-wty.github.io/posts/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E5%88%B0%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Tue, 09 Jan 2024 11:10:18 +0800</pubDate>
+      <guid>https://a-wty.github.io/posts/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E5%88%B0%E5%8D%9A%E5%AE%A2/</guid>
+      <description>前言 上篇文章我们搭建了博客，还把他部署到了远端&#xA;现在我们就愉快的玩博客&#xA;自定义域名 首先要在域名厂商那里买下一个域名，这里我以阿里云为例&#xA;浏览器搜索阿里云域名查询进入官网&#xA;搜索搜索你想要的域名名称，如果没有人注册过就可以愉快的注册了&#xA;通常这一步都会想好久【doge】&#xA;如果实在想不出，网上也有很多网站可以帮你依据关键字进行组合&#xA;你只需要搜索类似域名起名之类的关键字就会跳出一大堆&#xA;建议选择名称简短一点的&#xA;域名解析 首先在你的博客仓库里点击setings&#xA;然后找到pags页面&#xA;在Custom domain里把你精心挑选的域名填上，点击save设置&#xA;然后进入阿里云域名控制台，点击域名列表找到购买的域名&#xA;依次点击解析———&amp;gt;添加记录&#xA;这里我们会添加两个记录&#xA;记录一&#xA;在记录类型里填CNAME&#xA;在主机记录里填WWW&#xA;在记录值里填上你的要指向的博客名user_name.github.io&#xA;记录二&#xA;首先在在桌面启动cmd&#xA;然后输入命令&#xA;ping user_name.github.io 记下跳出结果的IP地址&#xA;回到阿里云域名控制台&#xA;在记录类型里填A&#xA;在主机记录里填@&#xA;在记录值里填刚才记下的IP地址&#xA;全部设置完成后回到GitHub填入域名的界面&#xA;把下面的Enforce HTTPS打勾&#xA;PS.这一步可做可不做，目的是为了提升网站的安全性，而且打勾后浏览器输入网站就不会弹出网站不安全的注意事项，强烈建议打勾，无非是几秒的事&#xA;后记 域名解析搞懂后还是相对好操作的。博主解析的时候，虽然能成功的通过域名进入博客，但是在github上会提示有问题建议修改，通过查看官方文档却看不懂，可能是目前博主的功力太浅，不能理解透彻，是通过网上搜索找到的解决方法。这篇文章的核心是域名解析部分，我在网上看过说要解析5个IP地址，其中有4个是github官方的地址，但是目前来看，我这种解析方案也没有错误，以后如果出现问题我在回来修改。</description>
+    </item>
     <item>
       <title>小白基于Hugo和Github搭建博客</title>
       <link>https://a-wty.github.io/posts/%E5%B0%8F%E7%99%BD%E5%9F%BA%E4%BA%8Ehugo%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>

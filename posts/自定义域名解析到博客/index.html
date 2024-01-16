@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>自定义域名解析到博客 // 0X555</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.121.1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="0X555" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.5b1fcc8902588589c4767187402a3c29f8b8d7a6fdef6d9f8f77045bb0d14fee.css" />
+    
+
+    
+    <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="自定义域名解析到博客"/>
+<meta name="twitter:description" content="前言 上篇文章我们搭建了博客，还把他部署到了远端
+现在我们就愉快的玩博客
+自定义域名 首先要在域名厂商那里买下一个域名，这里我以阿里云为例
+浏览器搜索阿里云域名查询进入官网
+搜索搜索你想要的域名名称，如果没有人注册过就可以愉快的注册了
+通常这一步都会想好久【doge】
+如果实在想不出，网上也有很多网站可以帮你依据关键字进行组合
+你只需要搜索类似域名起名之类的关键字就会跳出一大堆
+建议选择名称简短一点的
+域名解析 首先在你的博客仓库里点击setings
+然后找到pags页面
+在Custom domain里把你精心挑选的域名填上，点击save设置
+然后进入阿里云域名控制台，点击域名列表找到购买的域名
+依次点击解析———&gt;添加记录
+这里我们会添加两个记录
+记录一
+在记录类型里填CNAME
+在主机记录里填WWW
+在记录值里填上你的要指向的博客名user_name.github.io
+记录二
+首先在在桌面启动cmd
+然后输入命令
+ping user_name.github.io 记下跳出结果的IP地址
+回到阿里云域名控制台
+在记录类型里填A
+在主机记录里填@
+在记录值里填刚才记下的IP地址
+全部设置完成后回到GitHub填入域名的界面
+把下面的Enforce HTTPS打勾
+PS.这一步可做可不做，目的是为了提升网站的安全性，而且打勾后浏览器输入网站就不会弹出网站不安全的注意事项，强烈建议打勾，无非是几秒的事
+后记 域名解析搞懂后还是相对好操作的。博主解析的时候，虽然能成功的通过域名进入博客，但是在github上会提示有问题建议修改，通过查看官方文档却看不懂，可能是目前博主的功力太浅，不能理解透彻，是通过网上搜索找到的解决方法。这篇文章的核心是域名解析部分，我在网上看过说要解析5个IP地址，其中有4个是github官方的地址，但是目前来看，我这种解析方案也没有错误，以后如果出现问题我在回来修改。"/>
+
+    <meta property="og:title" content="自定义域名解析到博客" />
+<meta property="og:description" content="前言 上篇文章我们搭建了博客，还把他部署到了远端
+现在我们就愉快的玩博客
+自定义域名 首先要在域名厂商那里买下一个域名，这里我以阿里云为例
+浏览器搜索阿里云域名查询进入官网
+搜索搜索你想要的域名名称，如果没有人注册过就可以愉快的注册了
+通常这一步都会想好久【doge】
+如果实在想不出，网上也有很多网站可以帮你依据关键字进行组合
+你只需要搜索类似域名起名之类的关键字就会跳出一大堆
+建议选择名称简短一点的
+域名解析 首先在你的博客仓库里点击setings
+然后找到pags页面
+在Custom domain里把你精心挑选的域名填上，点击save设置
+然后进入阿里云域名控制台，点击域名列表找到购买的域名
+依次点击解析———&gt;添加记录
+这里我们会添加两个记录
+记录一
+在记录类型里填CNAME
+在主机记录里填WWW
+在记录值里填上你的要指向的博客名user_name.github.io
+记录二
+首先在在桌面启动cmd
+然后输入命令
+ping user_name.github.io 记下跳出结果的IP地址
+回到阿里云域名控制台
+在记录类型里填A
+在主机记录里填@
+在记录值里填刚才记下的IP地址
+全部设置完成后回到GitHub填入域名的界面
+把下面的Enforce HTTPS打勾
+PS.这一步可做可不做，目的是为了提升网站的安全性，而且打勾后浏览器输入网站就不会弹出网站不安全的注意事项，强烈建议打勾，无非是几秒的事
+后记 域名解析搞懂后还是相对好操作的。博主解析的时候，虽然能成功的通过域名进入博客，但是在github上会提示有问题建议修改，通过查看官方文档却看不懂，可能是目前博主的功力太浅，不能理解透彻，是通过网上搜索找到的解决方法。这篇文章的核心是域名解析部分，我在网上看过说要解析5个IP地址，其中有4个是github官方的地址，但是目前来看，我这种解析方案也没有错误，以后如果出现问题我在回来修改。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://a-wty.github.io/posts/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E5%88%B0%E5%8D%9A%E5%AE%A2/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-09T11:10:18+08:00" />
+<meta property="article:modified_time" content="2024-01-09T11:10:18+08:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://a-wty.github.io"><img class="app-header-avatar" src="/%e8%8a%af%e7%89%872.png" alt="0X555" /></a>
+      <span class="app-header-title">0X555</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>电子信息工程专业学生</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/A-WTY/A-WTY.github.io" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">自定义域名解析到博客</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jan 9, 2024
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h3 id="前言">前言</h3>
+<p><a href="https://0x555.cn/posts/%E5%B0%8F%E7%99%BD%E5%9F%BA%E4%BA%8Ehugo%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">上篇文章</a>我们搭建了博客，还把他部署到了远端</p>
+<p>现在我们就愉快的玩博客</p>
+<h2 id="自定义域名">自定义域名</h2>
+<p>首先要在域名厂商那里买下一个域名，这里我以阿里云为例</p>
+<p>浏览器搜索<strong>阿里云域名查询</strong>进入<a href="https://wanwang.aliyun.com/domain/searchresult/">官网</a></p>
+<p>搜索搜索你想要的域名名称，如果没有人注册过就可以愉快的注册了</p>
+<p><em><strong>通常这一步都会想好久【doge】</strong></em></p>
+<p>如果实在想不出，网上也有很多网站可以帮你依据关键字进行组合</p>
+<p>你只需要搜索类似<em><strong>域名起名</strong></em>之类的关键字就会跳出一大堆</p>
+<p><strong>建议选择名称简短一点的</strong></p>
+<h2 id="域名解析">域名解析</h2>
+<p>首先在你的博客仓库里点击<strong>setings</strong></p>
+<p><img src="2-1.png" alt="setings位置"></p>
+<p>然后找到<strong>pags</strong>页面</p>
+<p><img src="2-2.png" alt="pags页面位置"></p>
+<p>在<strong>Custom domain</strong>里把你精心挑选的域名填上，点击<strong>save</strong>设置</p>
+<p><img src="2-3.png" alt="流程图"></p>
+<p>然后进入阿里云域名控制台，点击域名列表找到购买的域名</p>
+<p>依次点击解析———&gt;添加记录</p>
+<p>这里我们会添加两个记录</p>
+<ul>
+<li>
+<p><strong>记录一</strong></p>
+<p>在记录类型里填<strong>CNAME</strong></p>
+<p>在主机记录里填<strong>WWW</strong></p>
+<p>在记录值里填上你的要指向的博客名<code>user_name.github.io</code></p>
+<p><img src="2-6.png" alt="子域名"></p>
+</li>
+<li>
+<p><strong>记录二</strong></p>
+<p>首先在在桌面启动<strong>cmd</strong></p>
+<p>然后输入命令</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ping user_name.github.io
+</span></span></code></pre></div><p>记下跳出结果的IP地址<br>
+<img src="2-7.png" alt="ping"></p>
+<p>回到阿里云域名控制台</p>
+<p>在记录类型里填<strong>A</strong></p>
+<p>在主机记录里填@</p>
+<p>在记录值里填刚才记下的IP地址</p>
+<p><img src="2-8.png" alt="ip地址"></p>
+</li>
+</ul>
+<p>全部设置完成后回到GitHub填入域名的界面</p>
+<p>把下面的<strong>Enforce HTTPS</strong>打勾<br>
+<em>PS.这一步可做可不做，目的是为了提升网站的安全性，而且打勾后浏览器输入网站就不会弹出网站不安全的注意事项，强烈建议打勾，无非是几秒的事</em></p>
+<h2 id="后记">后记</h2>
+<p>域名解析搞懂后还是相对好操作的。博主解析的时候，虽然能成功的通过域名进入博客，但是在github上会提示有问题建议修改，通过查看官方文档却看不懂，可能是目前博主的功力太浅，不能理解透彻，是通过网上搜索找到的解决方法。这篇文章的核心是域名解析部分，我在网上看过说要解析5个IP地址，其中有4个是github官方的地址，但是目前来看，我这种解析方案也没有错误，以后如果出现问题我在回来修改。</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
