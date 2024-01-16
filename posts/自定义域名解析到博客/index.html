@@ -131,7 +131,7 @@ PS.这一步可做可不做，目的是为了提升网站的安全性，而且�
     </header>
     <div class="post-content">
       <h3 id="前言">前言</h3>
-<p><a href="https://0x555.cn/posts/%E5%B0%8F%E7%99%BD%E5%9F%BA%E4%BA%8Ehugo%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">上篇文章</a>我们搭建了博客，还把他部署到了远端</p>
+<p>上篇<a href="https://0x555.cn/posts/%E5%B0%8F%E7%99%BD%E5%9F%BA%E4%BA%8Ehugo%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">文章</a>我们搭建了博客，还把他部署到了远端</p>
 <p>现在我们就愉快的玩博客</p>
 <h2 id="自定义域名">自定义域名</h2>
 <p>首先要在域名厂商那里买下一个域名，这里我以阿里云为例</p>
@@ -143,11 +143,11 @@ PS.这一步可做可不做，目的是为了提升网站的安全性，而且�
 <p><strong>建议选择名称简短一点的</strong></p>
 <h2 id="域名解析">域名解析</h2>
 <p>首先在你的博客仓库里点击<strong>setings</strong></p>
-<p><img src="2-1.png" alt="setings位置"></p>
+<p><img src="/img/2-1.png" alt="setings位置"></p>
 <p>然后找到<strong>pags</strong>页面</p>
-<p><img src="2-2.png" alt="pags页面位置"></p>
+<p><img src="/img/2-2.png" alt="pags页面位置"></p>
 <p>在<strong>Custom domain</strong>里把你精心挑选的域名填上，点击<strong>save</strong>设置</p>
-<p><img src="2-3.png" alt="流程图"></p>
+<p><img src="/img/2-3.png" alt="流程图"></p>
 <p>然后进入阿里云域名控制台，点击域名列表找到购买的域名</p>
 <p>依次点击解析———&gt;添加记录</p>
 <p>这里我们会添加两个记录</p>
@@ -157,7 +157,7 @@ PS.这一步可做可不做，目的是为了提升网站的安全性，而且�
 <p>在记录类型里填<strong>CNAME</strong></p>
 <p>在主机记录里填<strong>WWW</strong></p>
 <p>在记录值里填上你的要指向的博客名<code>user_name.github.io</code></p>
-<p><img src="2-6.png" alt="子域名"></p>
+<p><img src="/img/2-6.png" alt="子域名"></p>
 </li>
 <li>
 <p><strong>记录二</strong></p>
@@ -165,12 +165,12 @@ PS.这一步可做可不做，目的是为了提升网站的安全性，而且�
 <p>然后输入命令</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ping user_name.github.io
 </span></span></code></pre></div><p>记下跳出结果的IP地址<br>
-<img src="2-7.png" alt="ping"></p>
+<img src="/img/2-7.png" alt="ping"></p>
 <p>回到阿里云域名控制台</p>
 <p>在记录类型里填<strong>A</strong></p>
 <p>在主机记录里填@</p>
 <p>在记录值里填刚才记下的IP地址</p>
-<p><img src="2-8.png" alt="ip地址"></p>
+<p><img src="/img/2-8.png" alt="ip地址"></p>
 </li>
 </ul>
 <p>全部设置完成后回到GitHub填入域名的界面</p>
